@@ -460,9 +460,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: var(--primary-text-color);
-    
-    
+    color: var(--primary-text-color); 
 }
 
 

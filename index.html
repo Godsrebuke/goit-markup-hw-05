@@ -57,12 +57,24 @@
             
 
             <h1 class="hero__title"> Эффективные решения для вашего бизнеса </h1>
-            <button class="button" type="button">Заказать услугу</button>
+            <button class="button" type="button" data-modal-open>Заказать услугу</button>
 
     
         
         </section>
 
+        <section class="modal-container"> 
+          <div class="backdrop is-hidden" data-modal>   
+            <div class="modal"> 
+            <p> </p>
+            <button type="button" class="exit-button" data-modal-close> <svg class="exit-svg"> 
+              <use href="./symbol-defs.svg#icon-close-black-18dp-2-1"> </use>
+            </svg></button>
+            </div>
+
+
+          </div>
+        </section>
 
         
         <section class="functions">
@@ -104,9 +116,26 @@
                 
             <ul class="work-gallery"> 
 
-            <li class="work-items"> <img  src="./images/Keyboard.png" alt="Работа" width="370px" height="294px"> </li> 
-            <li class="work-items"> <img  src="./images/search.png" alt="Работа" width="370px" height="294px"> </li>
-            <li class="work-items"> <img  src="./images/xyeta.png" alt="Работа" width="370px" height="294px"> </li>
+            <li class="work-items">
+              <div class="label-bg"> 
+            <img  src="./images/Keyboard.png" alt="Работа" width="370px" height="294px"> 
+             <p class="label"> Десктопные приложения </p>
+            </div>
+          </li> 
+            <li class="work-items">
+              <div class="label-bg">
+            <img  src="./images/search.png" alt="Работа" width="370px" height="294px">
+            <p class="label"> Мобильные приложения </p> 
+          </div>
+          
+          </li>
+            <li class="work-items">
+              <div class="label-bg"> 
+            <img  src="./images/xyeta.png" alt="Работа" width="370px" height="294px"> 
+            <p class="label"> Дизайнерские решения </p>
+          </div>
+          
+          </li>
             </ul>
             </div>
         </section>
@@ -380,6 +409,7 @@
 </div>
 </div>
 </footer>
+<script src="/js/modal.js"></script>
 </body>
 
 </html> 

@@ -288,15 +288,15 @@
  }
 
 .content-cards {
-   margin-left: 30px;
+   margin-right: 30px;
    margin-bottom: 30px;
    border: 1px solid #eeeeee;
    width: 370px;
    height: 404px;
 }
 
-.content-cards:nth-child(3n + 1) {
-   margin-left: 0px;
+.content-cards:nth-child(3n) {
+   margin-right: 0px;
 }
 
 
@@ -308,9 +308,7 @@
    -top: 94px;
 }
 
-.content-cards:nth-child(3n) {
-      margin-right: 0px;
-   }
+
 
  .cards {  
    box-sizing: border-box;
